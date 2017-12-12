@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bake & Bite Cafe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 819px)" href="medium.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="small.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        h1,
+        h2,
+        h4,
+        h5,
+        h6 {
+            font-family: "Tangerine", sans-serif
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="top">
+        <p class="txt">Sun - Fri: Open
+            <br> Sat: Closed</p>
+        <div class="dropdown">
+            <button class="dropbtn"><img src="Images/threelines.png" height="50" width="75" alt="Menu">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="openinghours.html">Hours</a>
+                <a href="#contact"><img src="Images/contact.png" height="50" width="100" alt="Menu">
+                </a>
+            </div>
+        </div>
+    </div>
+    <img class="logo" src="Images/logo.jpg" height="150" width="150" alt="cafe logo">
+
+    <div class="w3-container w3-padding-64 w3-xxlarge text" id="menu">
+        <div class="w3-content">
+            <p class="m" id="back">THE MENU</p>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Breakfast');" id="myLink">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-grey mword">Breakfast</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'NN');">
+                    <div class="w3-col s3 tablink w3-padding-large w3-hover-grey mword">Nepali + Newari</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Combo');">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-grey mword">Combination</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'B&B');">
+                    <div class="w3-col s3 tablink w3-padding-large w3-hover-grey mword">B&B Combo Set</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                    <div class="w3-col s2 tablink w3-padding-large w3-hover-grey mword">Drinks</div>
+                </a>
+            </div>
+
+            <div id="Breakfast" class="w3-container menu w3-padding-32 w3-white left">
+
+                <h1 class="w3-center"><b>Simple Breakfast</b></h1>
+
+                <h1>Toast<span class="w3-right w3-tag w3-dark-grey w3-round">80/-</span></h1>
+                <p class="w3-text-grey w3-large">2 slices of toast served with butter and jam.</p>
+                <hr>
+
+                <h1>Aloo Paratha<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <p class="w3-text-grey w3-large">Spiced potato stuffed bread.</p>
+                <hr>
+
+                <h1>Bread, Butter & Jam<span class="w3-right w3-tag w3-dark-grey w3-round">60/-</span></h1>
+                <p class="w3-text-grey w3-large">2 slices of bread served with butter and jam.</p>
+                <hr>
+
+                <h1>Pancake<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+                <p class="w3-text-grey w3-large">2 pcs of pancakes served with honey.</p>
+                <hr>
+
+                <h1>Healthy Breakfast<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <p class="w3-text-grey w3-large">A Bowl of Cornflakes/Oats served with milk/yogurt.</p>
+                <hr>
+
+                <h1 class="w3-center"><b>Breakfast Set</b></h1>
+
+
+                <h1>Paratha Breakfast<span class="w3-right w3-tag w3-dark-grey w3-round">240/-</span></h1>
+                <p class="w3-text-grey w3-large">Aalo paratha, simple omlette/boiled egg/poached egg/scrambled egg, tea/coffee/juice.</p>
+                <hr>
+
+                <h1>Waffle Breakfast<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <p class="w3-text-grey w3-large">Waffles with honey/jam, simple omlette/boiled egg/poached egg/scrambled egg, tea/coffee/juice.</p>
+                <hr>
+
+                <h1>Toasted Waffle Breakfast<span class="w3-right w3-tag w3-dark-grey w3-round">330/-</span></h1>
+                <p class="w3-text-grey w3-large">Toasted waffles, french fries, simple omlette/boiled egg/poached egg/scrambled egg, tea/coffee/juice.</p>
+                <hr>
+
+                <h1>Simple Breafkast<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <p class="w3-text-grey w3-large">Butter toast, simple omlette/boiled egg/poached egg/scrambled egg, sausage, sauteed potato, tea/coffee/juice.</p>
+                <hr>
+
+                <h1>Healthy Breakfast Set<span class="w3-right w3-tag w3-dark-grey w3-round">280/-</span></h1>
+                <p class="w3-text-grey w3-large">A Bowl of Cornflakes/Oats, milk, simple omlette/boiled egg/poached egg/scrambled egg, tea/coffee/juice.</p>
+                <hr>
+
+                <h1>B&B Breakfast Set<span class="w3-right w3-tag w3-dark-grey w3-round">260/-</span></h1>
+                <p class="w3-text-grey w3-large">3 bun with different fillings, cheese, butter & jam, masala omlette, tea/coffee/juice.</p>
+                <hr>
+
+                <h1 class="w3-center"><b>Waffles</b></h1>
+
+                <h1>Plain waffles with honey<span class="w3-right w3-tag w3-dark-grey w3-round">120/-</span></h1>
+                <hr>
+
+                <h1>Waffles with ice-cream<span class="w3-right w3-tag w3-dark-grey w3-round">140/-</span></h1>
+                <hr>
+
+                <h1><b>Toasted waffles & fries</b>
+                <br>Veg - 175/-<br>
+                Cheese - 180/-<br>
+                Bacon - 220/-<br>
+                Chicken - 190/-<br>
+                Sausage - 190/-</h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Omlette</b></h1>
+
+                <h1>Plain<span class="w3-right w3-tag w3-dark-grey w3-round">80/-</span></h1>
+                <hr>
+                <h1>Cheese<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+                <h1>Sausage<span class="w3-right w3-tag w3-dark-grey w3-round">140/-</span></h1>
+                <hr>
+                <h1>Bacon<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+                <h1>Masala<span class="w3-right w3-tag w3-dark-grey w3-round">110/-</span></h1>
+                <hr>
+                <h1>Boild Egg<span class="w3-right w3-tag w3-dark-grey w3-round">35/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Soup</b></h1>
+
+                <h1>Vegetable<span class="w3-right w3-tag w3-dark-grey w3-round">120/-</span></h1>
+                <hr>
+                <h1>Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+                <h1>Mushroom<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+                <h1><b>B&B Piro</b><br>Veg - 140/-<br>
+                Non Veg - 170/-</h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Sandwich</b></h1>
+
+                <h1>Egg Sandwich<span class="w3-right w3-tag w3-dark-grey w3-round">165/-</span></h1>
+                <p class="w3-text-grey w3-large">Mayonnaise salad & egg sandwich with french fries.</p>
+                <hr>
+
+                <h1>Cheese Sandwich<span class="w3-right w3-tag w3-dark-grey w3-round">220/-</span></h1>
+                <p class="w3-text-grey w3-large">Mayonnaise salad & cheese with french fries.</p>
+                <hr>
+
+                <h1>Tuna Sandwich<span class="w3-right w3-tag w3-dark-grey w3-round">60/-</span></h1>
+                <p class="w3-text-grey w3-large">Mayonnaise salad & tuna with french fries.</p>
+                <hr>
+
+                <h1>Bacon Sandwich<span class="w3-right w3-tag w3-dark-grey w3-round">210/-</span></h1>
+                <p class="w3-text-grey w3-large">Mayonnaise salad & bacon with french fries.</p>
+                <hr>
+
+                <h1>Chicken Sandwich<span class="w3-right w3-tag w3-dark-grey w3-round">200/-</span></h1>
+                <p class="w3-text-grey w3-large">Mayonnaise salad & chicken with french fries.</p>
+                <hr>
+
+                <h1>Club Sandwich<span class="w3-right w3-tag w3-dark-grey w3-round">280/-</span></h1>
+                <p class="w3-text-grey w3-large">Mayonnaise salad, cheese, chicken & egg with french fries.</p>
+                <hr>
+
+
+                <h1 class="w3-center"><b>Wrap</b>
+                <br>(Lettuce, onion, carrot, topping of your choice & our spicy dressing, wrapped in a homemade bread/roti.)</h1>
+
+                <h1>Veg<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <hr>
+                <h1>Egg<span class="w3-right w3-tag w3-dark-grey w3-round">130/-</span></h1>
+                <hr>
+                <h1>Tuna<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+                <hr>
+                <h1>Bacon<span class="w3-right w3-tag w3-dark-grey w3-round">200/-</span></h1>
+                <hr>
+                <h1>Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+                <hr>
+                <h1>Sausage<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+            </div>
+
+            <div id="NN" class="w3-container menu w3-padding-32 w3-white left">
+                <h1 class="w3-center"><b>MO:MO</b><span class="w3-right w3-tag w3-dark-grey w3-round w3-grey w3-round">Popular</span></h1>
+
+                <h1><b>Steam</b>
+               <br>Veg - 100/-<br>
+                Buff- 120/-<br>
+                Chicken - 140/-<br>
+                </h1>
+                <hr>
+
+                <h1><b>Piro (Spicy)</b><br>
+                Veg - 150/-<br>
+                Buff- 170/-<br>
+                Chicken - 190/-<br>
+                </h1>
+                <hr>
+
+                <h1><b>Sadeko</b>
+                <br>Veg - 150/-<br>
+                Buff- 170/-<br>
+                Chicken - 190/-<br>
+                </h1>
+                <hr>
+
+                <h1><b>Jhol</b><br>
+                Veg - 150/-<br>
+                Buff- 170/-<br>
+                Chicken - 190/-<br>
+                </h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Sadeko</b></h1>
+
+
+                <h1>Palu Aloo/Sadeko Aloo<span class="w3-right w3-tag w3-dark-grey w3-round">130/-</span></h1>
+                <hr>
+                <h1>Badam Sadeko<span class="w3-right w3-tag w3-dark-grey w3-round">120/-</span></h1>
+                <hr>
+                <h1>Wai Wai Sadeko<span class="w3-right w3-tag w3-dark-grey w3-round">90/-</span></h1>
+                <hr>
+                <h1>Bhatmas Sadeko<span class="w3-right w3-tag w3-dark-grey w3-round">120/-</span></h1>
+                <hr>
+                <h1>Chicken Sadeko<span class="w3-right w3-tag w3-dark-grey w3-round">240/-</span></h1>
+                <hr>
+                <h1>Pork Sadeko<span class="w3-right w3-tag w3-dark-grey w3-round">270/-</span></h1>
+                <h1>Buff Sadeko<span class="w3-right w3-tag w3-dark-grey w3-round">240/-</span></h1>
+                <hr>
+                <h1>Sukuti Sadeko<span class="w3-right w3-tag w3-dark-grey w3-round">240/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Choyella</b></h1>
+
+
+                <h1>Maseura (Nutrela) Choyella<span class="w3-right w3-tag w3-dark-grey w3-round">120/-</span></h1>
+                <hr>
+                <h1>Chicken Choyella<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Buff Choyella<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Roti</b></h1>
+
+
+                <h1>Plain Roti<span class="w3-right w3-tag w3-dark-grey w3-round">20/-</span></h1>
+                <hr>
+                <h1>Butter Roti<span class="w3-right w3-tag w3-dark-grey w3-round">30/-</span></h1>
+                <hr>
+                <h1>Aloo Roti/Paratha<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Rice</b></h1>
+
+
+                <h1>Plain Rice<span class="w3-right w3-tag w3-dark-grey w3-round">60/-</span></h1>
+                <hr>
+                <h1>Butter Rice<span class="w3-right w3-tag w3-dark-grey w3-round">75/-</span></h1>
+                <hr>
+                <h1>Chiura (Beaten Rice)<span class="w3-right w3-tag w3-dark-grey w3-round">50/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Thukpa</b></h1>
+
+                <h1>Veg Thukpa<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles cooked in vegetable stock with mixed vegetables.</p>
+                <hr>
+
+                <h1>Egg Thukpa<span class="w3-right w3-tag w3-dark-grey w3-round">120/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles cooked in vegetable stock with mixed vegetables & topped with fried egg.</p>
+                <hr>
+
+                <h1>Chicken Thukpa<span class="w3-right w3-tag w3-dark-grey w3-round">140/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles cooked in vegetable stock with mixed vegetables & chicken slices.</p>
+                <hr>
+
+                <h1>Buff Thukpa<span class="w3-right w3-tag w3-dark-grey w3-round">140/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles cooked in vegetable stock with mixed vegetables & buff slices.</p>
+                <hr>
+
+                <h1>Pork Thukpa<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles cooked in vegetable stock with mixed vegetables & pork slices.</p>
+                <hr>
+
+                <h1>Mixed Thukpa<span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles cooked in vegetable stock with mixed vegetables, chicken/buff slices topped with fried egg.</p>
+                <hr>
+
+                <h1 class="w3-center"><b>Curry</b></h1>
+
+
+                <h1>Aloo mattar<span class="w3-right w3-tag w3-dark-grey w3-round">130/-</span></h1>
+                <hr>
+
+                <h1>Rajma Curry<span class="w3-right w3-tag w3-dark-grey w3-round">130/-</span></h1>
+                <hr>
+                <h1>Chicken Curry<span class="w3-right w3-tag w3-dark-grey w3-round">190/-</span></h1>
+                <hr>
+                <h1>Chicken Butter Masala<span class="w3-right w3-tag w3-dark-grey w3-round">230/-</span></h1>
+                <hr>
+                <h1>Fish Curry<span class="w3-right w3-tag w3-dark-grey w3-round">200/-</span></h1>
+                <hr>
+                <h1>Mattar Paneer<span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <h1>Mixed Veg Gravy<span class="w3-right w3-tag w3-dark-grey w3-round">130/-</span></h1>
+                <hr>
+                <h1>Shahi Paneer<span class="w3-right w3-tag w3-dark-grey w3-round">230/-</span></h1>
+                <hr>
+                <h1>Egg Curry<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+                <h1>Oyster Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Chana Tarkari (Nepali Style)<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+            </div>
+
+
+            <div id="Combo" class="w3-container menu w3-padding-32 w3-white left">
+
+                <h1 class="w3-center"><b>Snacks</b></h1>
+
+
+                <h1>French Fries<span class="w3-right w3-tag w3-dark-grey w3-round">130/-</span></h1>
+                <hr>
+
+                <h1>Hot Cheesy Chips<span class="w3-right w3-tag w3-dark-grey w3-round">190/-</span></h1>
+                <hr>
+                <h1>Veg Tempura<span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <hr>
+                <h1>Kungpau Potato<span class="w3-right w3-tag w3-dark-grey w3-round">200/-</span></h1>
+                <hr>
+                <h1>Kungpao Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <hr>
+                <h1>Aloo Jeera<span class="w3-right w3-tag w3-dark-grey w3-round">130/-</span></h1>
+                <h1>Cheeseball (8 Pcs)<span class="w3-right w3-tag w3-dark-grey w3-round">270/-</span></h1>
+                <hr>
+                <h1>Sweetcorn(stem/fried)<span class="w3-right w3-tag w3-dark-grey w3-round">110/-</span></h1>
+                <hr>
+                <h1>Sweet & Sour Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Fish Bites<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <hr>
+                <h1>Fish & Chips<span class="w3-right w3-tag w3-dark-grey w3-round">350/-</span></h1>
+                <hr>
+                <h1>Crispy Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Meatball(Buff)<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Meatball (Buff) in Hot Garlic Sauce<span class="w3-right w3-tag w3-dark-grey w3-round">280/-</span></h1>
+                <hr>
+                <h1>Chicken Satay<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <hr>
+                <h1>Fried/Steamed Sausage<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Cashew Nut Fry (Kaju Fry)<span class="w3-right w3-tag w3-dark-grey w3-round">350/-</span></h1>
+                <hr>
+                <h1>Mixed Dry Fruit<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <hr>
+                <h1><b>Papad</b>
+                <br>Fry - 30/-<br>
+                Masala- 80/-<br>
+                </h1>
+                <hr>
+                <h1><b>Spring Roll</b>
+                <br>Egg - 160/-<br>
+                Chicken - 180/-
+                </h1>
+                <hr>
+
+
+                <h1 class="w3-center"><b>Chilli</b></h1>
+
+
+                <h1>Chips Chilli<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+                <hr>
+
+                <h1>Chicken Chilli Boneless<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Paneer Chilli<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Fish Chilli<span class="w3-right w3-tag w3-dark-grey w3-round">270/-</span></h1>
+                <hr>
+                <h1>Buff Chilli<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Pork Chilli<span class="w3-right w3-tag w3-dark-grey w3-round">285/-</span></h1>
+                <h1>Sausage Chilli (Chicken)<span class="w3-right w3-tag w3-dark-grey w3-round">195/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Burger/HotDog</b>
+                <br>(Mixed Salad, Tomato, Onion, Cucumber, topping/meat of your choice with french fries.)</h1>
+
+                <h1>Chicken Burger<span class="w3-right w3-tag w3-dark-grey w3-round">210/-</span></h1>
+                <hr>
+                <h1>Egg Burger<span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <hr>
+                <h1>Cheese Burger<span class="w3-right w3-tag w3-dark-grey w3-round">220/-</span></h1>
+                <hr>
+                <h1>Fish Burger<span class="w3-right w3-tag w3-dark-grey w3-round">230/-</span></h1>
+                <hr>
+                <h1><b>Spicy Burger</b>
+                <br>Egg - 190/-<br>
+                Chicken - 220/-<br>
+                Fish - 240/-
+                </h1>
+                <hr>
+                <h1>Chicken Hotdog<span class="w3-right w3-tag w3-dark-grey w3-round">220/-</span></h1>
+                <p class="w3-text-grey w3-large">chicken sausage, mised salad, mayonnaise & ketchup dressing served with fries.</p>
+                <hr>
+
+                <h1 class="w3-center"><b>Pizza</b></h1>
+
+
+                <h1>Veg<span class="w3-right w3-tag w3-dark-grey w3-round">240/-</span></h1>
+                <p class="w3-text-grey w3-large">Homeade sauce, cheese, capsicum, tomatoes, onion & sweetcorn.</p>
+                <hr>
+
+                <h1>Cheese<span class="w3-right w3-tag w3-dark-grey w3-round">210/-</span></h1>
+                <p class="w3-text-grey w3-large">Homemade sauce & cheese.</p>
+                <hr>
+
+                <h1>Bacon<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <p class="w3-text-grey w3-large">Homemade sauce, bacon & cheese.</p>
+                <hr>
+
+                <h1>Sausage<span class="w3-right w3-tag w3-dark-grey w3-round">270/-</span></h1>
+                <p class="w3-text-grey w3-large">Homemade sauce, chicken sausage & cheese.</p>
+                <hr>
+
+                <h1>Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">270/-</span></h1>
+                <p class="w3-text-grey w3-large">Homemade sauce, chicken & cheese.</p>
+                <hr>
+
+                <h1>Mixed<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <p class="w3-text-grey w3-large">Homemade sauce, cheese, capsicum, tomatoes, onion, sweetcorn & chicken.</p>
+                <hr>
+                <h1>Meat Lover's Pizza<span class="w3-right w3-tag w3-dark-grey w3-round">380/-</span></h1>
+                <p class="w3-text-grey w3-large">Homemade sauce, cheese, bacon, sausage & chicken.</p>
+                <hr>
+                <h1><b>Extra Topping</b>
+                <br>Cheese- 50/-<br>
+                Seetcorn- 25/-<br>
+                Bacon- 90/-<br>
+                Sausage- 60/-<br>
+                Chicken - 60/-
+                </h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Chowmein</b></h1>
+
+                <h1>Veg<span class="w3-right w3-tag w3-dark-grey w3-round">140/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles fried with mixed vegetables.</p>
+                <hr>
+
+                <h1>Egg<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles fried with egg & mixed vegetables.</p>
+                <hr>
+
+                <h1>Bacon<span class="w3-right w3-tag w3-dark-grey w3-round">200/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles fried with bacon slices & mixed vegetables.</p>
+                <hr>
+
+                <h1>Buff<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles fried with buff slices & mixed vegetables.</p>
+                <hr>
+
+                <h1>Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">270/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles fried with chicken slices & mixed vegetables.</p>
+                <hr>
+                <h1>Pork<span class="w3-right w3-tag w3-dark-grey w3-round">270/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles fried with pork slices & mixed vegetables.</p>
+                <hr>
+
+                <h1>Mixed<span class="w3-right w3-tag w3-dark-grey w3-round">300/-</span></h1>
+                <p class="w3-text-grey w3-large">Noodles fried with egg, chicken/buff slices & mixed vegetables.</p>
+                <hr>
+
+                <h1 class="w3-center"><b>Fried Rice</b></h1>
+
+                <h1>Veg<span class="w3-right w3-tag w3-dark-grey w3-round">125/-</span></h1>
+                <p class="w3-text-grey w3-large">Rice fried with mixed vegetables.</p>
+                <hr>
+
+                <h1>Egg<span class="w3-right w3-tag w3-dark-grey w3-round">145/-</span></h1>
+                <p class="w3-text-grey w3-large">Rice fried with mixed vegetables & fried egg.</p>
+                <hr>
+
+                <h1>Chicken<span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <p class="w3-text-grey w3-large">Rice fried with chicken slices & mixed vegetables.</p>
+                <hr>
+
+                <h1>Bacon<span class="w3-right w3-tag w3-dark-grey w3-round">200/-</span></h1>
+                <p class="w3-text-grey w3-large">Rice fried with bacon slices & mixed vegetables.</p>
+                <hr>
+
+                <h1>Sausage <span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <p class="w3-text-grey w3-large">Rice fried with chicken sausage & mixed vegetables.</p>
+                <hr>
+
+                <h1>Mixed<span class="w3-right w3-tag w3-dark-grey w3-round">210/-</span></h1>
+                <p class="w3-text-grey w3-large">Rice fried with mixed vegetables, chicken slices & topped with fried egg.</p>
+
+            </div>
+
+            <div id="B&B" class="w3-container menu w3-padding-32 w3-white left">
+                <h1>BB Set A<span class="w3-right w3-tag w3-dark-grey w3-round">575/-</span></h1>
+                <p class="w3-text-grey w3-large">Chicken/Buff steam momo + Chicken Sausage + Fish Bites + Smile Potato + Chicken Chilli.</p>
+                <hr>
+
+                <h1>BB Set B<span class="w3-right w3-tag w3-dark-grey w3-round">575/-</span></h1>
+                <p class="w3-text-grey w3-large">Mixed Fried Rice + Palu Aloo + Chicken/Buff steam momo + French Fries + Crispy Chicken.</p>
+                <hr>
+
+                <h1>BB Set C<span class="w3-right w3-tag w3-dark-grey w3-round">575/-</span></h1>
+                <p class="w3-text-grey w3-large">Chicken Chowmein + Chicken/Buff steam momo + Crispy Chicken + Palu Aloo + Sweetcorn.</p>
+                <hr>
+
+                <h1>BB Set D<span class="w3-right w3-tag w3-dark-grey w3-round">490/-</span></h1>
+                <p class="w3-text-grey w3-large">Veg Fried Rice + Veg Momo + French Fries + Badam Sadeko + Paneer Chilli.</p>
+                <hr>
+
+                <h1>BB Set E<span class="w3-right w3-tag w3-dark-grey w3-round">490/-</span></h1>
+                <p class="w3-text-grey w3-large">Veg Chowmein + Veg Momo + French Fries + Badam Sadeko + Paneer Chilli.</p>
+                <hr>
+
+                <h1>BB Set F<span class="w3-right w3-tag w3-dark-grey w3-round">850/-</span></h1>
+                <p class="w3-text-grey w3-large">Badam/Bhatmas sadeko + Chicken Choyella + Wai Wai sadeko + Fried Chicken Sausage + Fish Bites + Crispy Chicken + French Fries.</p>
+            </div>
+
+            <div id="Drinks" class="w3-container menu w3-padding-32 w3-white left">
+                <h1 class="w3-center"><b>Cold Coffee</b></h1>
+
+
+                <h1>Americano<span class="w3-right w3-tag w3-dark-grey w3-round">110/-</span></h1>
+                <hr>
+
+                <h1>Blended Lattee (coffee)<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+                <h1>Blended Cappuccino<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+                <h1>Blended Mocha<span class="w3-right w3-tag w3-dark-grey w3-round">190/-</span></h1>
+                <hr>
+                <h1>Oreo Lattee<span class="w3-right w3-tag w3-dark-grey w3-round">190/-</span></h1>
+                <hr>
+                <h1>Blended Macchiato<span class="w3-right w3-tag w3-dark-grey w3-round">190/-</span></h1>
+                <h1>Blended Condenced Coffee<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+                <h1>Blended Honey Lattee<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+                <hr>
+
+
+                <h1 class="w3-center"><b>Cold Drinks/Smoothies</b></h1>
+
+                <h1>Ice cream Milk Shake<span class="w3-right w3-tag w3-dark-grey w3-round">175/-</span></h1>
+                <p class="w3-text-grey w3-large">Vanilla/Chocolate/Strawberry.</p>
+                <hr>
+
+                <h1>Mint Chocolate Shake<span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <hr>
+
+                <h1>Smoothies<span class="w3-right w3-tag w3-dark-grey w3-round">175/-</span></h1>
+                <p class="w3-text-grey w3-large">Banana/Apple/Mango.</p>
+                <hr>
+
+                <h1>Oreo Shake<span class="w3-right w3-tag w3-dark-grey w3-round">190/-</span></h1>
+                <p class="w3-text-grey w3-large">Chocolate/Strawberry).</p>
+                <hr>
+
+                <h1>Peach Ice Tea<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+
+                <h1>Ice Lemon Tea<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <hr>
+
+                <h1>Juice<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <p class="w3-text-grey w3-large">Apple/Orange/Cranberry/Mango.</p>
+                <hr>
+
+                <h1>Mineral Water<span class="w3-right w3-tag w3-dark-grey w3-round">40/-</span></h1>
+                <hr>
+                <h1>Ice cream float<span class="w3-right w3-tag w3-dark-grey w3-round">110/-</span></h1>
+                <hr>
+
+                <h1>Soda<span class="w3-right w3-tag w3-dark-grey w3-round">60/-</span></h1>
+                <p class="w3-text-grey w3-large">Coke/Fanta/Sprite.</p>
+                <hr>
+                <h1>Lassi<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <hr>
+                <h1>Sparkling Water<span class="w3-right w3-tag w3-dark-grey w3-round">50/-</span></h1>
+                <hr>
+                <h1>Peach Tea Soda<span class="w3-right w3-tag w3-dark-grey w3-round">170/-</span></h1>
+                <hr>
+                <h1>Strawberry Soda<span class="w3-right w3-tag w3-dark-grey w3-round">140/-</span></h1>
+                <hr>
+                <h1>Smart Drink (Fresh Lime Soda)<span class="w3-right w3-tag w3-dark-grey w3-round">80/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Lemonade</b></h1>
+
+                <h1>Lemonade<span class="w3-right w3-tag w3-dark-grey w3-round">125/-</span></h1>
+                <hr>
+                <h1>Mint Lemonade<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+                <h1>Strawberry Lemonade<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+                <h1>Peach Tea Lemonade<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+                <h1>Cleansing Cucumber Lemonade<span class="w3-right w3-tag w3-dark-grey w3-round">175/-</span></h1>
+                <hr>
+                <h1>Apple Mint Lemonade<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <h1>Honey Mint Lemonade<span class="w3-right w3-tag w3-dark-grey w3-round">150/-</span></h1>
+                <hr>
+
+
+
+                <h1 class="w3-center"><b>Frap</b></h1>
+                <hr>
+                <h1>Caramel Frap<span class="w3-right w3-tag w3-dark-grey w3-round">220/-</span></h1>
+                <hr>
+                <h1>Mocha Frap<span class="w3-right w3-tag w3-dark-grey w3-round">220/-</span></h1>
+                <hr>
+                <h1>Double Frap<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+                <h1>Oreo Frap<span class="w3-right w3-tag w3-dark-grey w3-round">250/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Mocktail</b></h1>
+
+                <h1>Tornado Twist<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+                <h1>Nojito<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+                <h1>Designated Appletini<span class="w3-right w3-tag w3-dark-grey w3-round">160/-</span></h1>
+                <hr>
+                <h1>Virgin Bellini<span class="w3-right w3-tag w3-dark-grey w3-round">200/-</span></h1>
+                <hr>
+                <h1>Virgin Wild Strawberry Mojito<span class="w3-right w3-tag w3-dark-grey w3-round">195/-</span></h1>
+                <hr>
+                <h1>Wild Strwaberry Fresca<span class="w3-right w3-tag w3-dark-grey w3-round">180/-</span></h1>
+                <hr>
+
+                <h1 class="w3-center"><b>Dessert</b><br>ICE-CREAM <br> (Vanilla/Chocolate/Strawberry)</h1>
+
+                <h1>Single Scoop<span class="w3-right w3-tag w3-dark-grey w3-round">65/-</span></h1>
+                <hr>
+                <h1>Double Scoop<span class="w3-right w3-tag w3-dark-grey w3-round">120/-</span></h1>
+                <hr>
+                <h1>Fried Ice-Cream<span class="w3-right w3-tag w3-dark-grey w3-round">100/-</span></h1>
+                <hr>
+                <h1>Mudcake Oreo Fantasy<span class="w3-right w3-tag w3-dark-grey w3-round">210/-</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <a href="#back"><img src="Images/top.png" height="50" width="200" alt="Menu">
+    </a>
+
+    <div class="box" id="contact">
+        <div class="card">
+            <h3> Contact Us At:</h3>
+            <br>
+            <a href="mailto:bakeandbitecafe@gmail.com"> <img src="Images/email.png" alt="Cafe's logo" width="100" height="100"> </a>
+        </div>
+        <div class="card">
+            <h3>Let's Get Connected!!!</h3>
+            <br>
+            <a href="https://www.facebook.com/pg/bakeandbitecafe/about/?ref=page_internal"> <img src="Images/fblogo.png" alt="facebook logo" width="100" height="100">
+            </a>
+            <a href="https://www.instagram.com/bakeandbitecafe/"><img src="Images/ins.png" alt="instagram logo" width="100" height="100">
+            </a>
+        </div>
+        <div class="card">
+            <h3>Check Out What They Have To Say!!! </h3>
+            <br>
+            <a href="https://www.instagram.com/p/BX24bfvgn5m/?taken-by=mr.foodie_nepal"> <img src="Images/logo.png" alt="Cafe's logo" width="50" height="50"> </a>
+            <a href="https://wavemag.com.np/those-delish-bites/"> <img src="Images/magazinecover.jpg" alt="Cafe's logo" width="50" height="50"> </a>
+            <a href="https://www.instagram.com/p/BWSjqE6FjH5/?tagged=bakeandbite"> <img src="Images/logo.png" alt="Cafe's logo" width="50" height="50"> </a>
+        </div>
+    </div>
+    <div class="w3-container w3-padding-64 w3-white w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a review:</p>
+            <form action="/action_page.php" target="_blank">
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message">
+                </p>
+                <p>
+                    <button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("w3-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
